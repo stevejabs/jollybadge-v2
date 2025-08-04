@@ -10,6 +10,7 @@ Pre-built firmware images live in the `builds/` directory.
 
 * **Latest release candidate:** `JollyBadgeV2-2.0.0.bin`
 * Earlier versions exist if you ever want to go back and try those challenges
+* 2.X.Y src will not be released until later this year
 
 ---
 
@@ -29,7 +30,7 @@ Pre-built firmware images live in the `builds/` directory.
 > The procedure is identical on every OS – only the serial-port name and, occasionally, the `bossac` executable name differ.
 
 1. **Connect the badge** to your computer via USB-C.
-2. **Enter bootloader mode**: double-press the RESET button – the LEDs will freeze, indicating the bootloader is active.
+2. **Enter bootloader mode**: double-press the RESET button – the LEDs will freeze, indicating the bootloader is active. The reset button is accessible without disassembling JollyBadge via the hole on the back enclosure.
 3. **Find your serial/COM port** (instructions below).
 4. **Close *all* serial monitors or terminal programs** that might have the port open (Arduino IDE Serial Monitor, screen, minicom, CoolTerm, etc.). bossac needs exclusive access.
 5. **Run the bossac command** for your OS, replacing the port name you found in step 3 **and the firmware filename if necessary**.
